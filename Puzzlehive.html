@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzlehive</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #0A1828;
+            color: rgb(255, 255, 255);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 8px;
+            background-color: #178582;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            font-size: 35px;
+            font-weight: bold;
+            color: #0A1828;
+        }
+
+        .hero {
+            color: #BFA181;
+            margin-top: 120px;
+            padding: 20px;
+            font-family: Verdana, sans-serif;
+        }
+        .hero h1 {
+            
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .box {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            margin: 50px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: medium;
+            width: 200px;
+        }
+        .game-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #224a77;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Verdana, sans-serif;
+        }
+        .button:hover {
+            background-color: #0A1828;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="name">
+            <span>Puzzlehive</span>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to Puzzlehive!</h1>
+        <h2>Here You Can Challenge Your Mind and Enhance Your Problem-Solving Ability</h1>
+    </div>
+
+
+    <div class="container">
+        <p>Select a Game to Play:</p>
+        <div class="box">
+            <img src="flip.jpeg" alt="Flip and Match" class="game-image">
+            <button class="button" onclick="window.location.href='FlipandMatch/index.html'">Flip and Match</button>
+        </div>
+        <div class="box">
+            <img src="maze.jpeg" alt="Maze Runner" class="game-image">
+            <button class="button" onclick="window.location.href='MazeRunner/index.html'">Maze Runner</button>
+        </div>
+    </div>
+</body>
+</html>
